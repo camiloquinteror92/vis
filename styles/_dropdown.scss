@@ -1,0 +1,213 @@
+.dropdown-menu-container{
+	display: inline-flex;
+	&:hover {
+		ul {
+			display: block;
+		}
+	}
+	.dropdown-button-container  {
+		.dropdown-toggle-button {
+			background-color: #f1f1f1;
+			border-radius: 4px;
+			border: #8c8c8c solid 2px;
+			color: #8c8c8c;
+			padding: 3px;
+			margin: 5px;
+			font-weight: bolder;
+			font-family: "Poppins-Bold", serif;
+			width: 180px;
+			text-align: left;
+			transition: all 0.5s ease-out;
+			cursor: pointer;
+			&:hover{
+				background-color: #ff911e;
+				color: whitesmoke;
+				border-color: #ff911e;
+			}		
+		}
+	}
+	.dropdown-box-options {
+		position: absolute;
+		z-index: 10; 
+		background-color: #f1f1f1;
+		margin-top: 42px;
+		padding-top: 2%;
+		list-style: none;
+		padding-right: 12px;
+		padding-left: 12px;
+		display: none;
+		top: -2px;				
+		.dropdown-option {
+			color: black;
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			display: flex;
+			border-bottom: 1px solid #ccc;
+			transition: all ease 0.4s;
+			font-family: "Poppins-Regular", serif;
+			cursor: pointer;
+			&:last-child {
+				border-bottom: none;
+			}
+			&:hover {
+				background-color: #8c8c8c;
+			}			
+		}  
+		#tabla-de-atributos{
+			&:before {
+				background: url("../styles/assets/bx-table.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#accidentalidad{
+			&:before {
+				background: url("../styles/assets/bxs-car-crash.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#consultas-red-vial{
+			&:before {
+				background: url("../styles/assets/bx-list-check.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#añadir-datos{
+			&:before {
+				background: url("../styles/assets/bxs-add-to-queue.svg") no-repeat;
+			}
+			@include option-logo;	
+		}
+		#ir-a{
+			&:before {
+				background: url("../styles/assets/bx-compass.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#imprimir{
+			&:before {
+				background: url("../styles/assets/bx-printer.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#leyenda{
+			&:before {
+				background: url("../styles/assets/bx-list-ul.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#capas{
+			&:before {
+				background: url("../styles/assets/bx-layer.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#dibujar{
+			&:before {
+				background: url("../styles/assets/bx-edit-alt.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#street-view{
+			&:before {
+				background: url("../styles/assets/bx-street-view.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#perfil-de-elevación{
+			&:before {
+				background: url("../styles/assets/bx-line-chart.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+		#galería-de-mapas{
+			&:before {
+				background: url("../styles/assets/bx-map-alt.svg") no-repeat;
+			}
+			@include option-logo;
+		}
+	}
+}
+
+#consultas {	
+	.dropdown-toggle-button {
+		&:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-consultas.png") no-repeat;
+			width: 16px;
+			height: 16px;
+			float: left;
+			margin: 1px 6px 0 0;
+			background-size: contain;
+		}	
+		&:hover:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-consultas-white.png") no-repeat;
+			width: 16px;
+			height: 16px;
+			float: left;
+			margin: 1px 6px 0 0;  
+			background-size: contain;
+		}
+		&:hover {
+			ul{
+				display: block;
+			}
+		}		
+	}
+	
+}
+
+#herramientas {
+	.dropdown-toggle-button {
+		&:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-herramientas.png") no-repeat;
+			width: 16px;
+			height: 16px;
+			float: left;
+			margin: 2px 6px 0 0;
+			background-size: contain;  
+		}
+		&:hover:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-herramientas-white.png") no-repeat;
+			width: 16px;
+			height: 16px;
+			float: left;
+			margin: 2px 6px 0 0;
+			background-size: contain;  
+		}
+	}	
+}
+
+#opciones-de-vista {
+	.dropdown-toggle-button {
+		&:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-opciones-vista.png") no-repeat;
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin: 3px 6px 0 0;
+			background-size: contain;
+		}	
+		&:hover:before {
+			content: "";
+			display: block;
+			background: url("../styles/assets/bx-opciones-vista-white.png") no-repeat;
+			width: 20px;
+			height: 20px;
+			float: left;
+			margin: 3px 6px 0 0; 
+			background-size: contain;
+		}		
+	}
+}
+
+
+

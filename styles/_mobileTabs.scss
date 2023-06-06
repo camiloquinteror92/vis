@@ -1,0 +1,6 @@
+.slick-slider {
+    display: none!important;
+    @media only screen and (max-width: $mob-port-max) {
+       display: block!important;
+    }
+}

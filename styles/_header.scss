@@ -1,0 +1,147 @@
+.App-header {
+	background-color: #f1f1f1;
+	font-family: "Poppins-Regular", serif;
+}
+.invias-app-header {	
+	display: inline-flex;
+	// width: 100%;
+	background-color: #f1f1f1;
+	padding: 20px;
+	.main-widget-button {
+		display: flex;
+		button {
+			margin-left: 35px;
+			margin-top: auto;
+			margin-bottom: auto;
+			border-radius: 6px;
+			border: #8c8c8c solid 2px;
+			font-family: "Poppins-Bold", serif;
+			color: #8c8c8c;
+			transition: all 0.5s ease-out;
+			cursor: pointer;
+			&:hover{
+				background-color: #ff911e;
+				color: whitesmoke;
+				border-color: #ff911e;
+			}
+			@media only screen and (max-width: $mob-port-max) {
+				display: none;
+			}
+		}
+	}
+	#left-side--widget-container {
+		margin-top: 80px;			
+		.side-bar-header {
+			background-color:#ff911e;
+			color:#f1f1f1;
+			font-family: "Poppins-Bold", serif;					
+			&:before {
+				background: url("../styles/assets/Flecha-Programe-su-ruta.png") no-repeat;
+				background-size: contain;
+				content: "";
+				display: block;  
+				width: 30px;
+				height: 30px;
+				float: left;
+				margin: 10px 0 0 10px;
+				padding-right: 20px;
+			}
+		}
+	}
+	.invias-header-dropdowns {	
+		display: inline-flex;
+		transition: all ease 0.4s;
+		right: 2%;
+		position: absolute;
+		top: 27px;
+		.about-link {
+			align-items: center;
+			display: flex;
+			font-weight: bolder;
+		}
+	
+	}
+	.invias-header-input {
+		display: inline-flex;
+		margin-left: 5%;
+		height: 30px;
+    	margin-top: 12px;
+		border-color: #8c8c8c solid 2px;		
+		.search-button{
+			background: url("../styles/assets/bx-search-orange.svg") no-repeat;
+			width: 30px;
+			height: 30px;
+			background-color: #f1f1f1;
+			border: #8c8c8c solid 2px;
+			&:hover {
+				background: url("../styles/assets/bx-search-white.svg") no-repeat;
+				background-color: #ff911e
+			}
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-left-style: none;
+		}
+		.search-address {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			outline: none;
+			border: #8c8c8c solid 2px;
+		}
+		@media only screen and (max-width: $mob-port-max) {			
+				display: none;			
+		}
+	}
+	.invias-header-logo{
+		display: inline-flex;		
+		margin-left: 5px;
+		.text-mapa-de {
+			padding: 4%;
+			white-space: nowrap;
+			font-size: 22px;
+			font-weight: bolder;
+		}
+		.text-carreteras{
+			color:#ff911e;
+			margin-left: 5px;
+			padding: 4% 4% 0 0;
+			font-size: 22px;
+
+		}		
+	}
+	.logo-separator {
+		border-right: 2px solid #ff911e;
+		padding: 10px;
+		@media only screen and (max-width: $mob-port-max) {
+			padding: 5px;
+		}
+	}
+
+	#invias-logo {
+		height: 50px;
+		@media only screen and (max-width: $mob-port-max) {
+			height: 40px;
+		}
+	}
+	
+}
+@media only screen and (max-width: $mob-port-max) {	
+	.search-address, .search-button, .invias-header-dropdowns {
+		display: none!important;
+	}
+	.invias-header-logo{
+		display: inline-flex;		
+		margin-left: 5px;
+		.text-mapa-de {
+			padding: 2%!important;
+			white-space: nowrap!important;
+			font-size: 20px!important;
+			font-weight: bolder!important;
+		}
+		.text-carreteras{			
+			margin-left: 5px!important;
+			padding: 2% 2% 0 0!important;
+			font-size: 20px!important;
+
+		}		
+	}	
+}

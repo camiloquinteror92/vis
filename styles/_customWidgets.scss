@@ -1,0 +1,56 @@
+.esri-search .esri-search__input {    
+    border-bottom: #8c8c8c solid 2px;
+    border-top: #8c8c8c solid 2px;
+    background-color: #f1f1f1;
+}
+
+#search-div-source-menu-button {    
+    border-bottom: #8c8c8c solid 2px;
+    border-top: #8c8c8c solid 2px;
+    border-left: #8c8c8c solid 2px;;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    transition: all 0.5s ease-out;
+    background-color: #f1f1f1!important;
+    background-size: 20px 20px!important;
+    background-position: center center!important;
+    background: url("../styles/assets/down-arrow-regular.png") no-repeat;
+    &:hover {
+        background-color: #ff911e!important;
+        border: none;
+        background: url("../styles/assets/down-arrow-regular-whitesmoke.png") no-repeat;
+                
+    }
+    span:before {
+        content: none;
+    }
+}
+
+.esri-search__submit-button {    
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: #8c8c8c solid 2px;
+    border-top: #8c8c8c solid 2px;
+    border-right: #8c8c8c solid 2px;
+    border-color: #8c8c8c;
+    background-color: #f1f1f1!important;
+    transition: all 0.5s ease-out;
+    background: url("../styles/assets/search-regular-gray.png") no-repeat;
+    background-size: 20px 20px;    
+    background-position: center center;
+    &:hover {
+        background: url("../styles/assets/search-regular-whitesmoke.png") no-repeat; 
+        background-color: #ff911e!important;
+        border: none;
+        background-size: 20px 20px;
+        background-position: center center;        
+    }
+    span {        
+        &.esri-icon-search {
+            @extend .hide;
+        }              
+    }
+    .hide {
+        display: none;
+    }
+}
